@@ -1,1 +1,24 @@
 # Configuration files (hyperparams, paths)
+
+# config.yaml
+
+base_model: "gpt2"
+dataset_name: "wikitext"
+output_dir: "./models/lora_gpt2"
+
+training:
+  epochs: 3
+  batch_size: 4
+  learning_rate: 5e-5
+  max_seq_length: 512
+
+lora:
+  r: 8
+  alpha: 32
+  dropout: 0.1
+
+logging:
+  logging_dir: "./models/lora_gpt2/logs"
+  logging_steps: 10
+  save_steps: 1000
+  save_total_limit: 2
