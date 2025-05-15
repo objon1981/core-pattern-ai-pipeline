@@ -1,0 +1,30 @@
+{
+  "wavelet": {
+    "type": "haar",
+    "level": 3
+  },
+  "graph_converter": {
+    "method": "universal"
+  },
+  "pattern_learner": {
+    "algorithm": "GNN",
+    "params": {
+      "layers": 2
+    }
+  },
+  "compressor": {
+    "method": "fibonacci"
+  },
+  "expander": {
+    "mode": "reinforcement",
+    "epochs": 10
+  },
+  "llm": {
+    "model": "gpt-4",
+    "api_key": "your-api-key-here"
+  },
+  "feedback_db": {
+    "type": "json",
+    "path": "data/feedback.json"
+  }
+}
