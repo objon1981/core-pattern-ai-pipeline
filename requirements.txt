@@ -1,0 +1,18 @@
+# Python dependencies
+
+numpy
+scipy
+matplotlib
+networkx
+torch
+transformers
+tqdm
+pandas
+flask
+sqlalchemy
+
+# Development & Testing
+pytest
+jupyter
+black
+flake8
